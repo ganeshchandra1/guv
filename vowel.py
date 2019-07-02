@@ -1,5 +1,9 @@
 a=str(input())
-if(a=="a" or a=="e" or a=="i" or a=="o" or a=="u" ):
-  print("Vowel")
-else:
+vowel="aeiou"
+consonant="bcdfghjklmnpqrrstvwxyz"
+for i in range(0,len(vowel))
+  if(a==vowel[i]):
+    print("Vowel")
+  
+
   print("Consonant")
