@@ -1,2 +1,3 @@
 a=int(input())
-print((a*(a+1))/2)
+sum=(a*(a+1))/2
+print(sum)
