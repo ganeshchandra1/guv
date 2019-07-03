@@ -1,9 +1,5 @@
 n=int(input())
 k=int(input())
-while(n+2<k):
-    if(n%2==0):
-       n=n+1
-       print(n)
-    else:
-        n=n+2
-        print(n)
+for i in range(n+1,k):
+    if(i%2==1):
+        print(i)
