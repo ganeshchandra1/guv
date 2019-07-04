@@ -6,5 +6,7 @@ if(len(n)==len(k)):
             continue
         else:
             count=count+1
-
-print(count)
+if(count==1):
+    print("yes")
+else:
+    print("no")
