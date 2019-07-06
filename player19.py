@@ -1,17 +1,15 @@
-import math
+def prime_factors2(n):
+        i = 2
+        factors = []
+        count = 0                           
+        while i * i <= n:                     
+            if n % i:
+                i += 1
+            else:
+                n //= i
+                factors.append(i)
+        if n > 1:
+            factors.append(n)
+        return factors
 n=int(input())
-a=n
-list1=[]
-while n % 2 == 0: 
-    print(2,end=' ') 
-    n = n / 2
-        
-for i in range(3, int(math.sqrt(n))+1, 2): 
-    
-    while n % i == 0: 
-        if i not in list1:
-             list1.append(i)
-             n=n/i
-             print(','.join(map(str, list1)))
-if n > 2: 
-    print(n) 
+print(' '.join(map(str,(set(prime_factors2(n))))))
