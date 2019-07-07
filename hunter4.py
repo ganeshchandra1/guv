@@ -1,8 +1,8 @@
 n=int(input())
 k=input()
 l=list(k)
-d={}
+dict={}
 for i in l:
-    if i not in d.keys():
-        d[i]=l.count(i)
-print(min(d, key=d.get))
+    if i not in dict.keys():
+        dict[i]=l.count(i)
+print(min(dict, key=dict.get))
