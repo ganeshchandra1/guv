@@ -4,4 +4,4 @@ for i in range(0,n):
     if(i==int(list1[i])):
         print(list1[i],end='')
 else:
-     print("'-1'")
+     print("-1")
