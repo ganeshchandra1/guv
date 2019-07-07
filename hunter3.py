@@ -1,7 +1,10 @@
 n=int(input())
+list2=[]
 list1=list(input().split())
 for i in range(0,n):
     if(i==int(list1[i])):
-        print(list1[i],end='')
+        list2.append(i)
+if(len(list2)==1):
+    print("-1")
 else:
-     print("-1")
+    print(' '.join(map(str,list2)))
