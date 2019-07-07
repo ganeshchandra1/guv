@@ -1,4 +1,4 @@
-n=int(input())
+k=int(input())
 list1=[]
 list2=[]
 list1=list(input().split())
