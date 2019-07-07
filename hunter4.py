@@ -1,4 +1,4 @@
-n=int(input())
+x=int(input())
 k=input()
 l=list(k)
 di={}
