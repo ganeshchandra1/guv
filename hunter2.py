@@ -1,7 +1,10 @@
-n=int(input())
+k=int(input())
 list1=list(input().split())
 list2=[]
-while(len(list1)>0):
-    list2.append(max(list1))
-    list1.remove(max(list1))
+if(max(list1)=="0"):
+    print(max(list1))
+else:
+    while(len(list1)>0):
+        list2.append(max(list1))
+        list1.remove(max(list1))
 print(''.join(list2))
