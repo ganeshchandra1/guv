@@ -1,4 +1,4 @@
-n=int(input())
+k=int(input())
 l=input().split()
 for i in range(0,len(l)):
     if(i%2==0):
