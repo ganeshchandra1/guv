@@ -1,9 +1,7 @@
 n=int(input())
 l=input().split()
-for i in l:
-    for j in l:
-        if(j>i):
-            for k in l:
-                if(k>j):
-                    if(int(i)+int(j)==int(k)):
-                        print(i+" "+j+" "+k)
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        for k in range(j+1,len(l)):
+            if(int(l[i])+int(l[j])==int(l[k])):
+                print(l[i],l[j],l[k])
