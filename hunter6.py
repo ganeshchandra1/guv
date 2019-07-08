@@ -10,4 +10,8 @@ for i in range(0,len(l)):
             dic.update({l[i]:count})
             #print(l[i],count)
             break
-print(min(dic,key=dic.get))     
+if(len(dic)==0):
+    print("unique")
+else:
+    print(min(dic,key=dic.get))      
+   
