@@ -1,9 +1,13 @@
 n=int(input())
-k=input()
-l=list(k)
+l=input().split()
+count=0
+dic=dict()
 for i in range(0,len(l)):
+    count=0
     for j in range(i+1,len(l)):
+        count=count+1
         if(l[i]==l[j]):
-            print(l[i])
+            dic.update({l[i]:count})
+            #print(l[i],count)
             break
-    break
+print(min(dic,key=dic.get))     
