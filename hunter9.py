@@ -9,6 +9,7 @@ d=dict(sorted(dic.items(), key=lambda x: x[1]))
 for i,j in d.items():
     if(j==0):
         print(i)
+        break
     else:
         key, value = min(d.items(), key=lambda kv : abs(kv[1] - target))
         print(key)
