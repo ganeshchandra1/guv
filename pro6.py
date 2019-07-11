@@ -8,6 +8,6 @@ for i in l:
 if 0 in l2:
     l2.remove(0)
 for i in range(min(l2)):
-    for j in range(min(l2)):
+    for j in range(min(l2)-1):
         print(1,end=' ')
-    print(end='\n')
+    print(end='1\n')
